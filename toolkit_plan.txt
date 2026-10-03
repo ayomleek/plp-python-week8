@@ -1,0 +1,93 @@
+PERSONAL MINI-TOOLKIT - PLAN
+============================
+
+1. MY TOOLS
+-----------
+Tool 1: Number Guessing Game
+Tool 2: To-Do List
+Tool 3: Simple Calculator
+Tool 4: Countdown Timer
+
+
+2. WHAT EACH TOOL DOES (one sentence each)
+------------------------------------------
+Number Guessing Game: The computer picks a secret number from 1 to 100 and
+  the player has 7 tries to guess it, getting "too high" / "too low" hints.
+
+To-Do List: The user can add tasks, view them, mark them as done, and remove
+  them, while the list changes as the program runs.
+
+Simple Calculator: The user enters two numbers and an operation (+, -, *, /)
+  and the program prints the result, handling bad input and divide-by-zero.
+
+Countdown Timer: The user enters a number of seconds (1-30) and the program
+  counts down one second at a time until it reaches zero.
+
+
+3. EXACT MENU TEXT
+------------------
+==============================
+   PERSONAL MINI-TOOLKIT
+==============================
+1. Number Guessing Game
+2. To-Do List
+3. Simple Calculator
+4. Countdown Timer
+5. Quit
+------------------------------
+Enter your choice (1-5):
+
+Message for an invalid choice:
+  Oops! "<what the user typed>" is not on the menu. Please type a number from 1 to 5.
+
+Welcome message:
+  Welcome to your Personal Mini-Toolkit! Pick a tool to get started.
+
+Goodbye message:
+  Thanks for using the toolkit. Goodbye and see you next time!
+
+
+4. CONCEPTS USED BY EACH TOOL
+-----------------------------
+Main menu:
+  - while loop (menu returns after every tool until Quit)
+  - if / elif / else (routes the choice, handles invalid choices)
+  - f-strings (invalid-choice message, goodbye)
+  - functions (one per tool, so the code is easy to read)
+
+Number Guessing Game:
+  - variables (secret number, attempts)
+  - while loop (keeps asking until correct or out of attempts)
+  - if / elif / else (too high, too low, correct)
+  - try / except (stops text input from crashing the game)
+  - random module
+  - f-strings (attempts remaining, results)
+
+To-Do List:
+  - LIST that changes while the program runs (append, pop, enumerate)
+  - while loop (sub-menu repeats until the user goes back)
+  - if / elif / else (add, view, complete, remove, back)
+  - f-strings (numbered task display, confirmations)
+
+Simple Calculator:
+  - if / elif / else (picks the operation, checks divide-by-zero)
+  - while loop (calculate again?)
+  - try / except (invalid numbers)
+  - f-strings (shows "8 + 2 = 10")
+
+Countdown Timer:
+  - for loop with range() counting backwards
+  - time module (sleep)
+  - if / else (input validation, special message at the end)
+  - f-strings (shows each second)
+
+
+5. TESTING CHECKLIST
+--------------------
+[ ] Menu choice 1 - play and win
+[ ] Menu choice 1 - play and lose
+[ ] Menu choice 2 - add, view, complete, remove, back
+[ ] Menu choice 3 - each operation, divide by zero, bad number
+[ ] Menu choice 4 - valid seconds, invalid input
+[ ] Invalid menu choices: letters, 0, 9, empty input
+[ ] Menu choice 5 - quit
