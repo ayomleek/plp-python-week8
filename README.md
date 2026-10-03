@@ -19,7 +19,7 @@ A menu-driven Python program that bundles four small tools into one app. It loop
 You need Python 3.6 or newer. No extra packages are required.
 
 ```bash
-git clone https://github.com/<your-username>/plp-python-week8.git
+git clone https://github.com/ayomleek/plp-python-week8.git
 cd plp-python-week8
 python toolkit.py
 ```
